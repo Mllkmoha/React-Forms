@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Login from "./components/StateLogin.jsx";
 import Signup from "./components/Signup.jsx";
 
 function App() {
   return (
-    <BrowserRouter basename="/React-forms">
+    <HashRouter>
       <Header />
       <main>
         <Routes>
@@ -13,7 +13,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
