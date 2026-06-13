@@ -5,7 +5,7 @@ import Signup from "./components/Signup.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/React-forms">
       <Header />
       <main>
         <Routes>
